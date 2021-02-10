@@ -1,0 +1,67 @@
+.footer-signup {
+    width: 570px;
+    padding: 60px 0;
+
+}
+
+.signup-title {
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 20px;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: getColor('secondary'); 
+}
+
+.form-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-input {
+    width: 358px;
+    padding: 15px 0 15px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+
+    background: getColor('footer');
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.pic-send {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: getColor('secondary');
+}
+
+.signup-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    padding: 13px;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: getColor('secondary');
+    background-color: getColor('button');
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}

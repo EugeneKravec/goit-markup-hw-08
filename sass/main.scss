@@ -1,0 +1,24 @@
+@import './utils/variables';
+@import './base/defaults';
+@import './base/fonts';
+@import './base/normalize';
+
+@import './features/backdrop';
+@import './features/modal';
+@import './features/overlay';
+@import './components/header/header';
+@import './components/header/nav';
+@import './components/header/contacts';
+
+@import './components/main/index/hero';
+@import './components/main/index/competence';
+@import './components/main/index/our-work';
+@import './components/main/index/our-team';
+@import './components/main/index/clients';
+
+@import './components/main/portfolio/filter';
+@import './components/main/portfolio/projects';
+
+@import './components/footer/contacts';
+@import './components/footer/social';
+@import './components/footer/signup';

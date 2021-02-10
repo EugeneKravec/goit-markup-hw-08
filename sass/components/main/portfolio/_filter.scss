@@ -1,0 +1,40 @@
+.filter-container {
+    padding-bottom: 50px;
+    background-color: getColor('secondary');
+}
+
+.filter-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+.button-filter {
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    background-color: getColor('icon-background');
+
+    &:hover,
+    &:focus {
+        background-color: getColor('button');
+        color: getColor('secondary');
+        outline: none;
+    }
+}
+
+.button-item {
+    margin-right: 8px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

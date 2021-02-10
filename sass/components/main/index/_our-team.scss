@@ -1,0 +1,112 @@
+.our-team {
+    padding: 94px 0;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    background-color: getColor('icon-background');
+}
+
+.our-team-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: getColor('primary');
+}
+
+.team-item {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+.images-list {
+    display: flex;
+}
+
+.our-team-item {
+    width: calc((100%-90px) / 4);
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14),    
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:nth-child(4n) {
+        margin-right: 0;
+    }
+}  
+
+.our-team-people {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: auto;
+    padding-right: auto;
+
+    background: getColor('secondary');
+}
+
+.social-box {
+    display: flex;
+    justify-content: space-around;
+    width: 206px;
+    margin-left: 32px;
+    margin-top: 16px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    
+    & .social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    
+        background: transparent;
+        fill: getColor('icon');
+    }
+
+    & .social-link:focus,
+    & .social-link:hover {
+    background: getColor('button');
+    fill: getColor('secondary');
+    outline-style: none;
+    }
+}
+
+.icon-instagram,
+.icon-twitter,
+.icon-facebook,
+.icon-linkedin {
+    width: 20px;
+    height: 20px;
+}

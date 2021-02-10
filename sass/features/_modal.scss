@@ -1,0 +1,198 @@
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(50% 50%);
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    width: 528px;
+    height: 581px;
+
+    background: getColor('secondary');
+}
+
+.modal-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    outline: none;
+
+    background-color: getColor('secondary');
+
+    &:focus,
+    &:hover {
+        fill: getColor('button');
+    }
+}
+
+.modal-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+
+    & .title {
+        margin-bottom: 12px;
+        text-align: center;
+    
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+    
+        color: getColor('primary');
+    }
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 448px;
+}
+
+.input-area {
+    width: 100%;
+    padding: 13px 0 13px 42px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    &:focus {
+        outline: none;
+        border: 1px solid getColor('button');
+        border-radius: 4px;
+    }
+    &:focus + .input-icon {
+        fill: getColor('button');
+    }
+    
+}
+
+.inputs {
+    position: relative;
+    width: 100%;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-5%);
+}
+
+.textarea {
+    resize: none;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    width: 448px;
+    height: 120px;
+
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    &:focus {
+        outline: none;
+        border: 1px solid getColor('button');
+    }
+}
+
+.input-lable {
+    margin-bottom: 4px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: getColor('accent');
+}
+
+.deal-box {
+    display: flex;
+    justify-content: center;
+}
+
+.deal-input {
+    appearance: none;
+    outline: none;
+}
+
+.deal-lable {
+    text-align: center;
+    margin-bottom: 15px;
+    
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: getColor('accent');
+
+    &::before {
+        content: " ";
+        display: inline-flex;
+        margin-right: 7px;
+        width: 16px;
+        height: 15px;
+        background-color: getColor('secondary');
+        border: 1px solid getColor('primary');
+        border-radius: 2px;
+    }
+    
+}
+
+.deal-input:checked + .deal-lable::before {
+    border-radius: 2px;
+    border: 1px solid getColor('button');
+    background-color: getColor('button');
+    background-image: url(../images/accept.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.input-button {
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 55px;
+
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    color: getColor('secondary');
+    background: getColor('button');
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}

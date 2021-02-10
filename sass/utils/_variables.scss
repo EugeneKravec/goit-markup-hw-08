@@ -1,0 +1,17 @@
+// вынесены Палитра цветов макета и наборы шрифтов
+
+$colors: (
+  'primary': #212121,
+  'accent': #757575,
+  'secondary': #ffffff,
+  'button': #2196F3,
+  'footer': #2F303A,
+  'background': #ffffff,
+  'icon': #AFB1B8,
+  'icon-background': #F5F4FA,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+  }
+

@@ -1,0 +1,50 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contacts {
+    padding: 60px 0;
+}
+
+.footer-studio {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color: getColor('secondary');
+}
+.footer-logo {
+    display: flex;
+    margin-bottom: 20px;
+    text-decoration: none;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color: getColor('button');
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 9px;
+    text-decoration: none;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    &:hover, 
+    &:focus {
+    color: getColor('button');
+    }
+}
