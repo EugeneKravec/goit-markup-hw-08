@@ -44,12 +44,6 @@ address {
   list-style: none;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .footer {
   background-color: #2F303A;
 }
@@ -690,7 +684,7 @@ template {
 }
 
 .hero {
-  padding: 200px 0;
+  padding: 118px 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2F303A;
@@ -698,35 +692,37 @@ template {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_background.jpg);
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+}
+
 .hero-text {
   margin: 0 auto;
   margin-bottom: 30px;
+  width: 100%;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.main-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  padding: 10px 32px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196F3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+@media screen and (min-width: 480px) {
+  .hero-text .hero-text {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-text {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .competence {
@@ -741,19 +737,6 @@ template {
   width: 1px;
   height: 1px;
   margin: -1px;
-}
-
-.competence-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .competence-unit {

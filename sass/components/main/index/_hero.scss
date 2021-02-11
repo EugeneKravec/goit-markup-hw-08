@@ -4,8 +4,37 @@
     margin: 0;
 }
 
+// .hero {
+//     padding: 200px 0;
+
+//     background-repeat: no-repeat;
+//     background-size: cover;
+
+//     background-color: getColor('footer');
+//     background-image: linear-gradient( 
+//         to right,
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4) ), 
+//         url(../images/hero_background.jpg);
+// }
+
+// .hero-text {
+//     margin: 0 auto;
+//     margin-bottom: 30px;
+
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+
+//     color: getColor('secondary');
+// }
+
+
 .hero {
-    padding: 200px 0;
+    padding: 118px 0;
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,36 +45,54 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4) ), 
         url(../images/hero_background.jpg);
+
+        @media screen and (min-width: 1200px) {
+            padding: 200px 0;
+        }
 }
 
 .hero-text {
     margin: 0 auto;
     margin-bottom: 30px;
+    width: 100%;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     color: getColor('secondary');
+
+    @media screen and (min-width: 480px) {
+        .hero-text {
+            width: 360px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
-.main-button {
-    display: flex;
-    margin: 0 auto;
-    padding: 10px 32px;
-    cursor: pointer;
+// .main-button {
+//     display: flex;
+//     margin: 0 auto;
+//     padding: 10px 32px;
+//     cursor: pointer;
     
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    text-align: center;
-    letter-spacing: 0.06em;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.87;
+//     text-align: center;
+//     letter-spacing: 0.06em;
 
-    color: getColor('secondary');
-    background-color: getColor('button');
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-}
+//     color: getColor('secondary');
+//     background-color: getColor('button');
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+// }
+
