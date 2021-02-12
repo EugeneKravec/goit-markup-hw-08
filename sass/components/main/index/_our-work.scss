@@ -1,6 +1,12 @@
 .our-work {
-    padding: 47px 0 94px;
+    display: none;
+    padding-bottom: 94px;
+
     background-color: getColor('secondary');
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
 }
 
 .our-work-title {

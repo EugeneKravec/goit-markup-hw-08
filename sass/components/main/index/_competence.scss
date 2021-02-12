@@ -1,8 +1,13 @@
 .competence {
     margin: 0 auto;
-    padding: 94px 0 47px;
+    padding: 60px 0 60px;
 
     background-color: getColor('background');
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 // Скрытый заголовок
 .visually-hidden {
@@ -13,28 +18,44 @@
     margin: -1px;
   }
 
-// .competence-list {
-//     display: flex;
+.competence-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-bottom: -30px;
+    }
+}
+    
 //     flex-direction: row;
 //     justify-content: center;
 // }
 
 .competence-unit {
-    width: 270px;
-    margin-right: 30px;
-
-    &:last-child {
-        margin-right: 0;
+    width: 100%;
+    margin-bottom: 30px;
+    & :last-child {
+        margin-bottom: 0;
     }
-    
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        margin-bottom: unset;
+    }
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
 .competence-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 30px;
-    width: 270px;
+    // margin-right: 30px;
+    // width: 270px;
     height: 120px;
 
     background: getColor('icon-background');
@@ -47,7 +68,8 @@
 
 .competence-item {
     margin: 30px 0 10px;
-    width: 270px;
+    width: 100%;
+    text-align: center;
 
     font-weight: 700;
     font-size: 14px;
@@ -56,11 +78,15 @@
     text-transform: uppercase;
 
     color: getColor('primary');
+
+    @media screen and (min-width: 768px) {
+        text-align: unset;
+    }
 }
 
 .competence-text {
-    width: 270px;
-    margin-left: 30px;
+    // width: 270px;
+    // margin-left: 30px;
     margin: 0 auto;
 
     font-weight: 400;
