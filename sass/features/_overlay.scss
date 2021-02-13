@@ -11,7 +11,7 @@
     background: rgba(33, 150, 243, 0.9);
 
     & .text {
-        padding: 64px 23px;
+        padding: 77px 24px;
         
         font-style: normal;
         font-weight: normal;
@@ -20,6 +20,14 @@
         letter-spacing: 0.03em;
     
         color: getColor('secondary');
+
+        @media screen and (min-width: 768px) {
+            padding: 49px 24px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 64px 23px;
+        }
     }
 }
 

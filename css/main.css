@@ -555,13 +555,25 @@ template {
 }
 
 .overlay .text {
-  padding: 64px 23px;
+  padding: 77px 24px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .overlay .text {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay .text {
+    padding: 64px 23px;
+  }
 }
 
 .project-overlay {
@@ -1219,17 +1231,8 @@ template {
   background-color: #ffffff;
 }
 
-.filter-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 25px;
-}
-
 @media screen and (min-width: 768px) {
-  .filter-list {
+  .filter-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1241,9 +1244,18 @@ template {
 }
 
 @media screen and (min-width: 1200px) {
-  .filter-list {
+  .filter-container {
     margin-bottom: 50px;
   }
+}
+
+.filter-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .button-item {
@@ -1291,7 +1303,6 @@ template {
 
 .project-list {
   margin: 0 auto;
-  padding: 60px 0 60px;
   background-color: #ffffff;
 }
 
@@ -1302,6 +1313,7 @@ template {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-bottom: 60px;
     margin-left: -30px;
     margin-bottom: -30px;
   }
@@ -1309,7 +1321,6 @@ template {
 
 @media screen and (min-width: 1200px) {
   .project-list {
-    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
@@ -1378,12 +1389,20 @@ template {
 }
 
 .footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .footer-contacts {
