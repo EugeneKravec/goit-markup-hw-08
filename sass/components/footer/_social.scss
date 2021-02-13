@@ -1,9 +1,10 @@
 .footer-social {
-    padding: 60px 0;
+    padding-top: 51px;
 
     & .title {
         padding-top: 12px;
         padding-bottom: 20px;
+        text-align: center;
     
         font-weight: 700;
         font-size: 14px;
@@ -12,6 +13,10 @@
         text-transform: uppercase;
     
         color: getColor('secondary');
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 50%;
     }
 }
 

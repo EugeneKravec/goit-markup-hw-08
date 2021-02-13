@@ -29,16 +29,6 @@ img {
   height: auto;
 }
 
-address {
-  margin-bottom: 9px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 2;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-}
-
 .list {
   color: #212121;
   list-style: none;
@@ -1389,6 +1379,13 @@ template {
 }
 
 .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1396,17 +1393,26 @@ template {
 
 @media screen and (min-width: 768px) {
   .footer-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
 .footer-contacts {
-  padding: 60px 0;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    width: 50%;
+  }
 }
 
 .footer-studio {
@@ -1422,6 +1428,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 20px;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
@@ -1440,6 +1449,9 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 9px;
   text-decoration: none;
   font-weight: 400;
@@ -1454,18 +1466,25 @@ template {
 }
 
 .footer-social {
-  padding: 60px 0;
+  padding-top: 51px;
 }
 
 .footer-social .title {
   padding-top: 12px;
   padding-bottom: 20px;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 0.87;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-social {
+    width: 50%;
+  }
 }
 
 .footer-box {
@@ -1524,16 +1543,14 @@ template {
 }
 
 .footer-signup {
-  width: 570px;
+  width: 100%;
   padding: 60px 0;
 }
 
 .signup-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 12px;
-  padding-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
@@ -1547,14 +1564,19 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .signup-input {
-  width: 358px;
-  padding: 15px 0 15px 15px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1567,7 +1589,6 @@ template {
 .pic-send {
   width: 24px;
   height: 24px;
-  margin-left: 10px;
   fill: #ffffff;
 }
 

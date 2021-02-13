@@ -1,13 +1,13 @@
 .footer-signup {
-    width: 570px;
+    width: 100%;
     padding: 60px 0;
 
 }
 
 .signup-title {
-    display: flex;
-    padding-top: 12px;
-    padding-bottom: 20px;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
 
     font-family: Roboto;
     font-weight: 700;
@@ -21,12 +21,14 @@
 
 .form-field {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 .signup-input {
-    width: 358px;
-    padding: 15px 0 15px 15px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -40,7 +42,7 @@
 .pic-send {
     width: 24px;
     height: 24px;
-    margin-left: 10px;
+    // margin-left: 10px;
     fill: getColor('secondary');
 }
 
