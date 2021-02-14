@@ -1,25 +1,35 @@
 .header-container {
     position: relative;
-    display: flex;
-    align-items: center;
-    background-color: getColor('background');
+    
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        background-color: getColor('background');
+    }
 }
 
-.page-header__menu {
-    position: absolute;
-    top: 60px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 480px;
-    height: 453px;
-    opacity: 1;
+// .page-header__menu {
+    // position: absolute;
+    // top: 60px;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    // width: 480px;
+    // height: 453px;
+    // opacity: 0;
+    
 
-    background: getColor('background');
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 
-    0px 2px 4px rgba(0, 0, 0, 0.08), 
-    0px 1px 3px rgba(0, 0, 0, 0.16);
-}
+    // background: getColor('background');
+    // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 
+    // 0px 2px 4px rgba(0, 0, 0, 0.08), 
+    // 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    // @media screen and (min-width: 768px) {
+    //     position: relative;
+    //     opacity: 0;
+    // }
+// }
 
 .header-logo {
     display: flex;
@@ -46,6 +56,7 @@
 }
 .header-list {
     padding-top: 60px;
+    margin-bottom: 60px;
 
     font-weight: 500;
     font-size: 14px;
@@ -55,6 +66,7 @@
     @media screen and (min-width: 768px) {
         display: flex;
         margin-left: 88px;
+        margin-bottom: 0;
     }
 
     @media screen and (min-width: 1200px) {
@@ -68,7 +80,7 @@
     display: block;
     text-align: center;
     text-decoration: none;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     
 
     font-family: Roboto;
@@ -103,6 +115,11 @@
 }
 
 .active-page {
+    width: fit-content;
+    margin-bottom: 52px;
+    margin-left: auto;
+    margin-right: auto;
+
     color: getColor('button');
     // Подчеркивание активной страницы
     &::after {
@@ -128,6 +145,7 @@
         
             background: getColor('button');
             border-radius: 2px;
+        }
     }
 
     @media screen and (min-width: 1200px) {
@@ -135,19 +153,27 @@
     }
 }
 .contact-list {
-    display: flex;  
-    justify-content: flex-end;
-    margin-left: auto;
+    padding-top: 20px;
+
+    @media screen and (min-width: 768px) {
+        padding-top:unset;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;  
+        justify-content: flex-end;
+        margin-left: auto;
+    }
 }
 
 .header-contacts {
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
     text-decoration: none;
 
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     
@@ -163,6 +189,17 @@
     &:focus .icon-mail,
     &:focus .icon-smartphone {
         fill: getColor('button');
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        font-size: 14px;
     }
 }
 
@@ -180,4 +217,48 @@
     height: 16px;
 
     fill: getColor('accent');
+}
+
+.header-button__menu {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    outline: none;
+    border: unset;
+
+    background-color: getColor('secondary');
+
+    &:focus,
+    &:hover {
+        fill: getColor('button');
+    }
+}
+
+.header-button__close {
+    position: absolute;
+    top: -45px;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    outline: none;
+    border: unset;
+
+    background-color: getColor('secondary');
+
+    &:focus,
+    &:hover {
+        fill: getColor('button');
+    }
 }
