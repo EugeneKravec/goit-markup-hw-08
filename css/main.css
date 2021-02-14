@@ -572,6 +572,7 @@ template {
 }
 
 .header-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,11 +582,24 @@ template {
   background-color: #ffffff;
 }
 
+.page-header__menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 480px;
+  height: 453px;
+  opacity: 1;
+  background: #ffffff;
+}
+
 .header-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
+  padding: 16px 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
