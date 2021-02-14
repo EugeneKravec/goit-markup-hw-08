@@ -613,10 +613,33 @@ template {
   }
 }
 
-.header-logo {
+.page-header__menu-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .page-header__menu-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 48px 40px;
+    z-index: 1;
+    background: #ffffff;
+  }
+  .page-header__menu-container .is-open {
+    display: block;
+  }
+}
+
+.header-logo {
+  display: inline-block;
   text-decoration: none;
   padding: 16px 0;
   font-family: 'Raleway', sans-serif;
@@ -810,54 +833,39 @@ template {
   fill: #757575;
 }
 
-.header-button__menu {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 30px;
-  height: 30px;
+.page-header__menu {
+  margin: 10px 0;
+  margin-left: auto;
+  border: none;
   cursor: pointer;
-  outline: none;
-  border: unset;
-  background-color: #ffffff;
+  background: transparent;
+  z-index: 2;
 }
 
-.header-button__menu:focus, .header-button__menu:hover {
+.page-header__menu:hover, .page-header__menu:focus {
   fill: #2196F3;
 }
 
-.header-button__close {
-  position: absolute;
-  top: -45px;
-  right: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  outline: none;
-  border: unset;
-  background-color: #ffffff;
+.page-header__menu.is-open .page-header__icon-cross {
+  display: block;
 }
 
-.header-button__close:focus, .header-button__close:hover {
-  fill: #2196F3;
+.page-header__menu.is-open .page-header__icon-burger {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__menu {
+    display: none;
+  }
+}
+
+.page-header__icon-cross {
+  display: none;
+}
+
+.page-header__icon-burger {
+  display: block;
 }
 
 .hero-line {
