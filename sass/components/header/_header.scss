@@ -7,14 +7,18 @@
 
 .page-header__menu {
     position: absolute;
-    top: 0;
+    top: 60px;
     bottom: 0;
     left: 0;
     right: 0;
     width: 480px;
     height: 453px;
     opacity: 1;
+
     background: getColor('background');
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 
+    0px 2px 4px rgba(0, 0, 0, 0.08), 
+    0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
 .header-logo {
@@ -41,26 +45,36 @@
     color: getColor('primary');
 }
 .header-list {
-    display: flex;
-    margin-left: 93px;
+    padding-top: 60px;
 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.42;
     letter-spacing: 0.02em;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: 88px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        margin-left: 93px;
+    }
 }
 
 .header-link {
     position: relative;
     display: block;
-    padding: 32px 0;
+    text-align: center;
     text-decoration: none;
-    margin-right: 50px;
+    margin-bottom: 30px;
+    
 
     font-family: Roboto;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 18px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
 
     color: getColor('primary');
@@ -73,6 +87,19 @@
     &:focus {
         color: getColor('button');
     }
+
+    @media screen and (min-width: 768px) {
+        padding: 32px 0;
+        margin-right: 50px;
+        margin-bottom: 0;
+
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+    @media screen and (min-width: 1200px) {
+    
+    }
 }
 
 .active-page {
@@ -84,10 +111,27 @@
         content: "";
         width: 100%;
         height: 4px;
-        margin-top: 28px;
+        margin-top: 8px;
     
         background: getColor('button');
         border-radius: 2px;
+    }
+
+    @media screen and (min-width: 768px) {
+        &::after {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 4px;
+            margin-top: 28px;
+        
+            background: getColor('button');
+            border-radius: 2px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    
     }
 }
 .contact-list {
