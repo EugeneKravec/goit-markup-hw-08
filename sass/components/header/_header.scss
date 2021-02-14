@@ -7,46 +7,6 @@
         background-color: getColor('background');
     }
 }
-.page-header__menu-container {
-    display: flex;
-    align-items: center;
-
-    @media screen and (max-width: 767px) {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 48px 40px;
-        z-index: 1;
-        .is-open {
-            display: block;
-        }
-        background: getColor('background');
-    }
-}
-
-// .page-header__menu {
-    // position: absolute;
-    // top: 60px;
-    // bottom: 0;
-    // left: 0;
-    // right: 0;
-    // width: 480px;
-    // height: 453px;
-    // opacity: 0;
-    
-
-    // background: getColor('background');
-    // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 
-    // 0px 2px 4px rgba(0, 0, 0, 0.08), 
-    // 0px 1px 3px rgba(0, 0, 0, 0.16);
-
-    // @media screen and (min-width: 768px) {
-    //     position: relative;
-    //     opacity: 0;
-    // }
-// }
 
 .header-logo {
     display: inline-block;
@@ -269,51 +229,3 @@
 .page-header__icon-burger {
     display: block;
 }
-
-
-
-// .page-header__menu .is-open
-
-// .header-button__menu {
-//     position: absolute;
-//     top: 15px;
-//     right: 20px;
-
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 30px;
-//     height: 30px;
-//     cursor: pointer;
-//     outline: none;
-//     border: unset;
-
-//     background-color: getColor('secondary');
-
-//     &:focus,
-//     &:hover {
-//         fill: getColor('button');
-//     }
-// }
-
-// .header-button__close {
-//     position: absolute;
-//     top: -45px;
-//     right: 20px;
-
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 30px;
-//     height: 30px;
-//     cursor: pointer;
-//     outline: none;
-//     border: unset;
-
-//     background-color: getColor('secondary');
-
-//     &:focus,
-//     &:hover {
-//         fill: getColor('button');
-//     }
-// }
