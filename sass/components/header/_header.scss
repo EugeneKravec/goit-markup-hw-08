@@ -1,4 +1,5 @@
 .header-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     
@@ -215,6 +216,32 @@
 
 .menu-button.is-open .icon-menu {
     display: none;
+}
+
+.menu-container {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #000;
+    display: none;
+    &.is-open {
+        display: block;
+    }
+}
+
+.header-social {
+    display: flex;
+    justify-content: space-around;
+    
+    &.item {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+
+        color: getColor('accent');
+    }
 }
 
 
